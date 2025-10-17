@@ -6,13 +6,13 @@
   
   <!-- Primary Meta Tags -->
   <!-- TODO: Replace with your paper title and author names -->
-  <meta name="title" content="PAPER_TITLE - AUTHOR_NAMES">
+  <meta name="title" content="DeepAnalyze: Agentic Large Language Model for Autonomous Data Science">
   <!-- TODO: Write a compelling 150-160 character description of your research -->
   <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
   <!-- TODO: Add 5-10 relevant keywords for your research area -->
-  <meta name="keywords" content="KEYWORD1, KEYWORD2, KEYWORD3, machine learning, computer vision, AI">
+  <meta name="keywords" content="LLM, Data Science, Agent, Agentic Training, AI">
   <!-- TODO: List all authors -->
-  <meta name="author" content="FIRST_AUTHOR_NAME, SECOND_AUTHOR_NAME">
+  <meta name="author" content="Shaolei Zhang, Ju Fan, Meihao Fan, Guoliang Li, Xiaoyong Du">
   <meta name="robots" content="index, follow">
   <meta name="language" content="English">
   
@@ -77,8 +77,8 @@
   <title>PAPER_TITLE - AUTHOR_NAMES | Academic Research</title>
   
   <!-- Favicon and App Icons -->
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link rel="apple-touch-icon" href="static/images/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="static/images/deepanalyze.png">
+  <link rel="apple-touch-icon" href="static/images/deepanalyze.png">
   
   <!-- Critical CSS - Load synchronously -->
   <link rel="stylesheet" href="static/css/bulma.min.css">
@@ -170,7 +170,7 @@
     "@type": "Organization",
     "name": "INSTITUTION_OR_LAB_NAME",
     "url": "https://YOUR_INSTITUTION_WEBSITE.com",
-    "logo": "https://YOUR_DOMAIN.com/static/images/favicon.ico",
+    "logo": "https://YOUR_DOMAIN.com/static/images/deepanalyze.png",
     "sameAs": [
       "https://twitter.com/YOUR_TWITTER_HANDLE",
       "https://github.com/YOUR_GITHUB_USERNAME"
@@ -241,23 +241,25 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">DeepAnalyze: Agentic Large Language Model for Autonomous Data Science</h1>
             <div class="is-size-5 publication-authors">
               <!-- TODO: Replace with your paper authors and their personal links -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="https://zhangshaolei1998.github.io/" target="_blank">Shaolei Zhang</a><sup>1</sup>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <a href="http://iir.ruc.edu.cn/~fanj/" target="_blank">Ju Fan</a><sup>1</sup>,</span>
+              <span class="author-block">
+                  <a href="https://scholar.google.com/citations?user=9RTm2qoAAAAJ" target="_blank">Meihao Fan</a><sup>1</sup>,</span>
+              <span class="author-block">
+                  <a href="https://dbgroup.cs.tsinghua.edu.cn/ligl/" target="_blank">Guoliang Li</a><sup>2</sup>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                    <a href="http://info.ruc.edu.cn/jsky/szdw/ajxjgcx/jsjkxyjsx1/js2/7374b0a3f58045fc9543703ccea2eb9c.htm" target="_blank">Xiaoyong Du</a><sup>1</sup>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
                     <!-- TODO: Replace with your institution and conference/journal info -->
-                    <span class="author-block">Institution Name<br>Conference name and year</span>
-                    <!-- TODO: Remove this line if no equal contribution -->
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="author-block"><sup>1</sup>Renmin University of China, <sup>2</sup>Tsinghua University</span>
                   </div>
 
                   <div class="column has-text-centered">
@@ -273,20 +275,10 @@
                       </a>
                     </span>
 
-                    <!-- TODO: Add your supplementary material PDF or remove this section -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
+                    
                   <!-- TODO: Replace with your GitHub repository URL -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://github.com/ruc-datalab/DeepAnalyze" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -295,16 +287,38 @@
                   </a>
                 </span>
 
-                <!-- TODO: Update with your arXiv paper ID -->
+                <!-- Hugging Face 模型 -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
+                  <a href="https://huggingface.co/RUC-DataLab/DeepAnalyze-8B" target="_blank"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-huggingface"></i>
+                    </span>
+                    <span>DeepAnalyze-8B</span>
+                  </a>
+                </span>
+                
+                <!-- Hugging Face 数据集 -->
+                <span class="link-block">
+                  <a href="https://huggingface.co/datasets/RUC-DataLab/DataScience-Instruct" target="_blank"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-books"></i>
+                    </span>
+                    <span>DataScience-Instruct</span>
+                  </a>
+                </span>
+                
+                <!-- Hugging Face Benchmark -->
+                <span class="link-block">
+                  <a href="https://huggingface.co/datasets/RUC-DataLab/DABStep-Research" target="_blank"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-benchmark"></i>
+                    </span>
+                    <span>DABStep-Research</span>
+                  </a>
+                </span>
             </div>
           </div>
         </div>
