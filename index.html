@@ -222,7 +222,7 @@
                         <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
+                          <i class="ai ai-arxiv"></i>
                         </span>
                         <span>Paper</span>
                       </a>
@@ -245,7 +245,7 @@
                   <a href="https://huggingface.co/RUC-DataLab/DeepAnalyze-8B" target="_blank"
                      class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
-                      <i class="ai ai-huggingface"></i>
+                      🤗
                     </span>
                     <span>DeepAnalyze-8B</span>
                   </a>
@@ -253,25 +253,15 @@
                 
                 <!-- Hugging Face 数据集 -->
                 <span class="link-block">
-                  <a href="https://huggingface.co/datasets/RUC-DataLab/DataScience-Instruct" target="_blank"
+                  <a href="https://huggingface.co/datasets/RUC-DataLab/DataScience-Instruct-500K" target="_blank"
                      class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
-                      <i class="ai ai-books"></i>
+                      📚
                     </span>
-                    <span>DataScience-Instruct</span>
+                    <span>DataScience-Instruct-500K</span>
                   </a>
                 </span>
                 
-                <!-- Hugging Face Benchmark -->
-                <span class="link-block">
-                  <a href="https://huggingface.co/datasets/RUC-DataLab/DABStep-Research" target="_blank"
-                     class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="ai ai-benchmark"></i>
-                    </span>
-                    <span>DABStep-Research</span>
-                  </a>
-                </span>
             </div>
           </div>
         </div>
@@ -280,24 +270,6 @@
   </div>
 </section>
 
-
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <!-- TODO: Replace with your teaser video -->
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-        <!-- TODO: Add your video file path here -->
-        <source src="static/videos/banner_video.mp4" type="video/mp4">
-      </video>
-      <!-- TODO: Replace with your video description -->
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -308,9 +280,15 @@
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper abstract -->
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Autonomous data science, from raw data sources to analyst-grade deep research reports, has been a long-standing challenge, and is now becoming feasible with the emergence of powerful large language models (LLMs). Recent workflow-based data agents have shown promising results on specific data tasks but remain fundamentally limited in achieving fully autonomous data science due to their reliance on predefined workflows. In this paper, we introduce DeepAnalyze-8B, the first agentic LLM designed for autonomous data science, capable of automatically completing the end-to-end pipeline from data sources to analyst-grade deep research reports. To tackle high-complexity data science tasks, we propose a curriculum-based agentic training paradigm that emulates the learning trajectory of human data scientists, enabling LLMs to progressively acquire and integrate multiple capabilities in real-world environments. We also introduce a data-grounded trajectory synthesis framework that constructs high-quality training data. Through agentic training, DeepAnalyze learns to operate across a broad spectrum of data tasks, ranging from data question answering and specialized analytical tasks to open-ended data research. Experiments demonstrate that, with only 8B parameters, DeepAnalyze outperforms previous workflow-based agents built on powerful closed-source LLMs. The model, code, and training data of DeepAnalyze are open-sourced, paving the way toward autonomous data science.
           </p>
         </div>
+        <figure class="image" style="display: flex; justify-content: center;">
+          <img src="static/images/deepanalyze.jpg" alt="deepanalyze" style="width:70%;">
+        </figure>
+        <h2 class="subtitle has-text-centered" style="color: red; font-size: 1rem;">
+          DeepAnalyze-8B is the first end-to-end agentic LLM that achieves autonomous data science, supporting entire data science pipeline and open-ended data research.
+        </h2>
       </div>
     </div>
   </div>
@@ -318,123 +296,76 @@
 <!-- End paper abstract -->
 
 
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- TODO: Replace with your research result images -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
+
+
+
+
+
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="title is-3 has-text-centered">Demo</h2>
+      <!-- TODO: Replace with your teaser video -->
+      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
+        <!-- TODO: Add your video file path here -->
+        <source src="static/videos/deepanalyze-video.mp4" type="video/mp4">
+      </video>
+      <!-- TODO: Replace with your video description -->
+      <h2 class="subtitle has-text-centered"style="font-size: 1.1rem;">
+        Upload the data, DeepAnalyze can perform data-oriented deep research 🔍 and any data-centric tasks 🛠
       </h2>
     </div>
   </div>
-</div>
-</div>
 </section>
-<!-- End image carousel -->
+<!-- End teaser video -->
 
 
 
 
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- TODO: Replace with your YouTube video ID -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
+
+<section class="section hero is-small">
+  <div class="container is-max-desktop">
+        <h2 class="title is-3 has-text-centered">Introducing DeepAnalyze</h2>
+        <div class="content has-text-justified">
+          <center>
+            <img src="static/images/model.jpg" width="100%">
+          </center>
+          <p>
+
+              <font color="red">DeepAnalyze automates the entire data science pipeline, such as specific data tasks and open-ended data research, offering a “one-size-fits-all” solution for data science tasks.</font>:<br>
+              <p>To achieve this, we propose:</p>
+              <ul>
+                <li><strong>Curriculum-based agentic training:</strong> Guide LLM from mastering individual single abilities to developing comprehensive abilities in real-world environments through a progressive easy-to-difficult schedule.</li>
+                <li><strong>Data-grounded trajectory synthesis:</strong> Automatically generates high-quality reasoning and interaction trajectories to provide effective guidance within the vast solution space.</li>
+              </ul>
+            </p>
         </div>
-      </div>
-    </div>
   </div>
 </section>
-<!-- End youtube video -->
 
 
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
-          </video>
+<section class="section hero is-small">
+  <div class="container is-max-desktop">
+        <h2 class="title is-3 has-text-centered">Performance of DeepAnalyze 🎈</h2>
+        <div class="content has-text-justified">
+          <p>
+            <strong>1. End-to-end Data Pipeline</strong>
+          </p>
+          <center>
+          <img src="static/images/datascibench.jpg" alt="MY ALT TEXT" style="width: 100%;"/>
+          </center>
+          <br><br><br>
+          <p>
+            <strong>2.Data-oriented Deep Research</strong>
+          </p>
+          <center>
+          <img src="static/images/research.jpg" alt="MY ALT TEXT" style="width: 100%;"/>
+          </center>
         </div>
-        <div class="item item-video2">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
   </div>
 </section>
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <!-- TODO: Replace with your poster PDF -->
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
-
 
 
 <!--BibTex citation -->
